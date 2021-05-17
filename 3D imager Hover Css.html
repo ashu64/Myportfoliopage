@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>3D imager Hover Css</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css"/>
+      <style>
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff6d39;
+  font-family: "muli";
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 21px;
+  display: inline-block;
+}
+
+.product-name i {
+  color: #ffffff;
+  transition: 0.3s all ease;
+  margin: 0px 12px;
+}
+
+.product-name i:hover {
+  color: #ff6d39;
+  cursor: pointer;
+}
+
+h3 {
+  color: #fec60f;
+  font-family: "muli";
+  margin-top: 84px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 29px;
+}
+
+h4 {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h4.dis {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 30px;
+  text-decoration: line-through #ea3201;
+}
+
+h4.dis span {
+  text-decoration: line-through #ea3201;
+}
+
+.discount {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+ul li {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.bg {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  padding: 2px;
+  margin-right: 20px;
+  transition: 0.3s all ease;
+  border-radius: 50%;
+}
+
+.bg:hover {
+  background-color: #ff6d39;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.yellow {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #fec60f;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s all ease;
+}
+
+.black {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s all ease;
+}
+
+.blue {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #02a2ca;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s all ease;
+}
+
+.yellow:hover,
+.black:hover,
+.blue:hover {
+  border: 2px solid #f76b39;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.foot {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 20px;
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 11px;
+  float: left;
+  transition: 0.3s all ease;
+}
+
+.foot i:nth-child(1) {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.foot:hover {
+  color: #f76b39;
+  cursor: pointer;
+}
+
+/shoe slider indicator/
+
+.left i {
+  color: #ffd5c6;
+  margin-top: 260px;
+  transition: 0.3s all ease;
+}
+
+.fa-long-arrow-left {
+  margin-left: -275px;
+}
+
+.fa-long-arrow-right {
+  margin-left: 15px;
+}
+
+.left i:hover {
+  cursor: pointer;
+  color: #2a2f40;
+}
+
+.underline {
+  width: 10rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: #f5f2f2;
+
+  margin-right: 3rem;
+}
+/main card/
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #757b8d;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 2%;
+}
+.img {
+  margin-bottom: 5rem;
+  margin-left: 2opx;
+}
+.left {
+  content: "";
+  height: 405px;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  background-color: #8d0b14;
+  margin-left: 93px;
+  border-radius: 0% 50% 50% 0%;
+  position: absolute;
+  z-index: 5;
+}
+
+.left img {
+  margin-left: -88px;
+  margin-top: 60px;
+}
+
+.right {
+  content: "";
+  height: 405px;
+  width: 550px;
+  background-color: #2a2f40;
+  z-index: 3;
+  margin-left: 200px;
+}
+
+.product-info {
+  position: absolute;
+  margin-left: 245px;
+  height: 394px;
+  width: 305px;
+  z-index: 10;
+}
+</style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="left">
+                <img src="main.png" width="400" height="300" alt="shoe"/>
+                </div>
+
+                <div class="right">
+                    <div class="product-info">
+                        <div class="product-name">
+                            <h1>Nike Sneakers</h1>
+                            <div class="underline"></div>
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-user"></i>
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="card-details">
+                            <h3>winter Collection</h3>
+                            <h2>Men Black Sneakers</h2>
+                            <h4>Rs.1500</h4>
+                            <h4 class="dis">Rs.2000</h4>
+                        </div>
+                        <ul>
+                            <li>SIZE</li>
+                           <li class="bg">7</li>
+                           <li class="bg">8</li>
+                           <li class="bg">9</li>
+                           <li class="bg">10</li>
+
+                        </ul>
+                        <ul>
+
+                            <li>color</li>
+                            <li class="yellow"></li>
+                            <li class="blue"></li>
+                            <li class="black"></li>
+                        </ul>
+                        <span class="foot">
+                            <i class="fa fa-shopping-bag"></i>Buy now
+                        </span>
+  <div class="contact-me-link">
+            <a href="https://twitter.com/@Ashutos47235354" target="_blank"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0%0D%0Ab3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZl%0D%0AcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEi%0D%0AIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93%0D%0Ad3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDg2%0D%0ALjM5MiA0ODYuMzkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODYuMzkyIDQ4%0D%0ANi4zOTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRo%0D%0AIHN0eWxlPSJmaWxsOiMwMTAwMDI7IiBkPSJNMzk1LjE5MywwSDkxLjE5OEM0MC44MjYsMCwwLDQw%0D%0ALjgyNiwwLDkxLjE5OHYzMDMuOTk1YzAsNTAuMzcyLDQwLjgyNiw5MS4xOTgsOTEuMTk4LDkxLjE5%0D%0AOA0KCQkJCWgzMDMuOTk1YzUwLjM3MiwwLDkxLjE5OC00MC44MjcsOTEuMTk4LTkxLjE5OFY5MS4x%0D%0AOThDNDg2LjM5Miw0MC44MjYsNDQ1LjU2NSwwLDM5NS4xOTMsMHogTTM2NC4xODYsMTg4LjU5OGww%0D%0ALjE4Miw3Ljc1Mg0KCQkJCWMwLDc5LjE2LTYwLjIyMSwxNzAuMzU5LTE3MC4zNTksMTcwLjM1OWMt%0D%0AMzMuODA0LDAtNjUuMjY4LTkuOTEtOTEuNzc2LTI2LjkwNGM0LjY4MiwwLjU0Nyw5LjQ1NCwwLjg1%0D%0AMSwxNC4yODgsMC44NTENCgkJCQljMjguMDU5LDAsNTMuODY4LTkuNTc2LDc0LjM1Ny0yNS42Mjdj%0D%0ALTI2LjIwNC0wLjQ4Ni00OC4zMDUtMTcuODE0LTU1LjkzNS00MS41ODZjMy42NzgsMC42NjksNy4z%0D%0AODcsMS4wMzQsMTEuMjc4LDEuMDM0DQoJCQkJYzUuNDcyLDAsMTAuNzYxLTAuNjk5LDE1Ljc3Ny0y%0D%0ALjA2N2MtMjcuMzktNS41MzMtNDguMDMxLTI5LjctNDguMDMxLTU4LjcwMXYtMC43NmM4LjA4Niw0%0D%0ALjQ5OSwxNy4yOTcsNy4xNzQsMjcuMTE2LDcuNTA5DQoJCQkJYy0xNi4wNTEtMTAuNzMxLTI2LjYz%0D%0ALTI5LjA2Mi0yNi42My00OS44MjVjMC0xMC45NzQsMi45NDktMjEuMjQ5LDguMDg2LTMwLjA5NWMy%0D%0AOS41MTgsMzYuMjM2LDczLjY1OCw2MC4wNjksMTIzLjQyMiw2Mi41NjINCgkJCQljLTEuMDM0LTQu%0D%0AMzc4LTEuNTUtOC45NjgtMS41NS0xMy42NDljMC0zMy4wNDQsMjYuODEyLTU5Ljg1Nyw1OS44ODct%0D%0ANTkuODU3YzE3LjIwNiwwLDMyLjc3MSw3LjI2NSw0My43MTQsMTguOTA4DQoJCQkJYzEzLjYxOS0y%0D%0ALjcwNiwyNi40NDgtNy42OTEsMzguMDMtMTQuNTMxYy00LjQ2OSwxMy45ODQtMTMuOTUzLDI1Ljcx%0D%0AOC0yNi4zMjYsMzMuMTM1YzEyLjA2OS0xLjQyOSwyMy42NTEtNC42ODIsMzQuMzgyLTkuNDI0DQoJ%0D%0ACQkJQzM4Ni4wNzMsMTY5LjY1OSwzNzUuODg5LDE4MC4yMDgsMzY0LjE4NiwxODguNTk4eiIvPg0K%0D%0ACQk8L2c+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxn%0D%0APg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8%0D%0AL2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0K%0D%0ACTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8%0D%0AZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+%0D%0ADQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0K%0D%0APC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" alt="Twitter"/></a>
+          </div>
+                        <span class="foot">
+                            <i class="fa fa-shopping-cart"></i>Add to cart
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+  </html>
